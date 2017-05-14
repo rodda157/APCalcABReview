@@ -1,0 +1,3 @@
+What element has the electron configuration 2-8? :: Ne ;; |rndElem
+Which of the following has 4 valence electrons? :: Si ;; |rndElem !C Ge Sn Pb Uuq
+Which of the following is most reactive? :: F ;; Cl Br I At
