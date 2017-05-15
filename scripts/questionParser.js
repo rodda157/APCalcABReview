@@ -49,14 +49,18 @@ function createQuestions(qArr) {
                 question.correct = q.substring(sep1 + 2, sep2).trim();
                 var answers = q.substring(sep2 + 2).trim();
                 if (answers.indexOf("|") < 0) { //No | means use specified answers
-                    question.choices = answers.split(" ");
+                    question.choices = answers.split(",");
+                    
                 } else if (answers.indexOf("!") >= 0) { //A | and a ! means generate random answers excluding the specified elements
                     var nt = answers.substring(answers.indexOf("!") + 1);
-                    question.choices = randomElements(nt.split(" ").push(question.correct));
+                    question.choices = randomElements(nt.split(",").push(question.correct));
                 } else { //no ! but a | means generate random answers
                     question.choices = randomElements([question.correct]);
                 }
                 question.choices.push(question.correct); //Add correct answer to answers
+                for (var i = 0; i < question.choices.length; i++) { //Remove excess whitespace in answers
+                        question.choices[i] = question.choices[i].trim();
+                    }
                 
                 if (question.choices.length == 5) { //Verify that the correct number of answers exist
                     // console.log(question);
