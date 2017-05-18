@@ -1,7 +1,10 @@
 # Question Format
 
-Ideally, questions should be separated into different text files based on type or topic for ease of organization. 
+Ideally, questions should be separated between text files for ease of organization. 
 `qList.txt` specifies the files to be used for questions, and any files not listed in it will be ignored by the parser.
+
+**DO NOT include any _completely_ blank files in qLists.txt!** It breaks the parser for reasons unknown to me currently.
+I will fix this once I have time, as it is not the highest priority on this project at the moment.
 
 At the moment, there are three variations of question:
 

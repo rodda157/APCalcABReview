@@ -1,2 +1,1 @@
-redox.txt
 basicPeriodictable.txt
