@@ -14,7 +14,6 @@ var numTotal = 0;
 $(".ans").click(function() {
     numTotal++;
     ans = $(this).find("h4").html();
-    console.log(ans);
     if (ans == questions[qCurrent].correct) {
         numCorrect++;
         $("#incorrect").hide();
@@ -29,7 +28,6 @@ $(".ans").click(function() {
 });
 
 $("#playBtn").click(function() {
-    console.log("play");
     $("#playBtn").hide();
     $("#qArea").show();
     showNextQuestion();

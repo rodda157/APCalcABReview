@@ -129,7 +129,6 @@ function getFileNames() {
         url: "./questions/qList.txt",
         method: "GET",
         success: function(data, err) {
-            // console.log(data.split("\n"));
             fileNames = data.split("\n");
         },
         error: function() {
@@ -167,7 +166,6 @@ function createQuestions(qArr) {
         file.forEach(function(q) {
             if (q.trim() != "") {
                 var question = {};
-                // console.log(q);
                 var sep1 = q.indexOf("::");
                 question.body = q.substring(0, sep1).trim();
                 var sep2 = q.indexOf(";;");
@@ -189,9 +187,7 @@ function createQuestions(qArr) {
                 }
                 
                 if (question.choices.length == 5) { //Verify that the correct number of answers exist
-                    // console.log(question);
                     questions.push(question);
-                    // console.log(questions);
                 } else {
                     console.log("Not enough answers on this question:");
                     console.log(question.body);
