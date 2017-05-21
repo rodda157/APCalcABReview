@@ -2,18 +2,78 @@
 <html>
     <head>
         <title>Chemistry Trivia</title>
+        
+        <link rel="stylesheet" href="style/stylesheet.css" type="text/css" />
     </head>
     <body>
-        <h1>Coming soon!</h1>
-        <p>If all goes well, there should be a functioning trivia game here very soon.</p>
+        
+        <div class="container">
+            
+            <div id="score">--%</div>
+            
+            <button class="btn" id="playBtn">Play</button>
+            
+            <div id="qArea" class="qArea">
+                <div class="card">
+                    <div class="card-block">
+                        <h4 class="card-title" id="qBody">qhere</h4>
+                    </div>
+                </div>
+                <div class="card-group">
+                    <div class="card  ans">
+                        <div class="card-block">
+                            <h4 class="card-title" id="ans1">qhere</h4>
+                        </div>
+                    </div>
+                    <div class="card  ans">
+                        <div class="card-block">
+                            <h4 class="card-title" id="ans2">qhere</h4>
+                        </div>
+                    </div>
+                    <div class="card  ans">
+                        <div class="card-block">
+                            <h4 class="card-title" id="ans3">qhere</h4>
+                        </div>
+                    </div>
+                    <div class="card ans">
+                        <div class="card-block">
+                            <h4 class="card-title" id="ans4">qhere</h4>
+                        </div>
+                    </div>
+                    <div class="card ans">
+                        <div class="card-block">
+                            <h4 class="card-title" id="ans5">qhere</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="alert alert-success" role="alert" id="correct" style="display:none;">
+                <strong>Correct!</strong>
+            </div>
+            
+            <div class="alert alert-danger" role="alert" id="incorrect" style="display:none;">
+                <strong>Incorrect!</strong>
+            </div>
+            
+        </div>
+        
+        <div class="footer">
+            <div class="container">
+                <br>
+                Take a look at the code <a href="https://github.com/theProgrammerJack/ChemistryTrivia">on GitHub</a>. <br>
+                Found an mistake or bug? Open an <a href="https://github.com/theProgrammerJack/ChemistryTrivia/issues">issue</a>. <br>
+                Feel free to submit pull requests with new features or additional questions. <br><br>
+            </div>
+        </div>
         
         <!-- Bootstrap 4 and Jquery -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         
-        <!-- My scripts and styles -->
+        <!-- My scripts -->
         <script type="text/javascript" src="scripts/questionParser.js"></script>
         <script type="text/javascript" src="scripts/main.js"></script>
     </body>

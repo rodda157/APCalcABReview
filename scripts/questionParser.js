@@ -189,8 +189,9 @@ function createQuestions(qArr) {
                 }
                 
                 if (question.choices.length == 5) { //Verify that the correct number of answers exist
-                    console.log(question);
+                    // console.log(question);
                     questions.push(question);
+                    // console.log(questions);
                 } else {
                     console.log("Not enough answers on this question:");
                     console.log(question.body);
