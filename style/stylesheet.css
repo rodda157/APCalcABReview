@@ -1,0 +1,64 @@
+.footer {
+    background-color: #f0f0f0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#qArea {
+    display: none
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ans {
+    text-align: center;
+}
+
+.ans:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    
+}
+
+.result-msg {
+    display: none;
+}
+
+.next {
+    text-decoration: underline !important;
+    float: right;
+}
+
+.next:hover {
+    cursor: pointer;
+}
+
+#playBtn {
+    background-color: #6d0a0a;
+}
+
+#playBtn:hover {
+    cursor: pointer;
+}
+
+#finalScreen {
+    display: none;
+}
+
+#home-btn {
+    background-color: #6d0a0a;
+    
+}
+
+#home-btn:hover {
+    cursor: pointer;
+}
