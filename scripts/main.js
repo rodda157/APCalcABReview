@@ -1,11 +1,7 @@
 var fileNames = getFileNames();
-// console.log(fileNames);
 var questionFiles = getQuestionsArrayFromFiles(fileNames);
-// console.log(questionFiles);
 var questions = createQuestions(questionFiles);
-// console.log(questions)
 questions = shuffle(questions);
-// console.log(questions);
 
 var qCurrent = 0;
 var numCorrect = 0;
@@ -22,8 +18,14 @@ $(".ans").click(function() {
         $("#correct").hide();
         $("#incorrect").show();
     }
-    $("#score").html((numCorrect / numTotal * 100) + "%");
+    $("#score").html("Correct: " + (numCorrect / numTotal * 100).toFixed(2) + "%");
     qCurrent++;
+    $("#qArea").hide();
+});
+
+$(".next").click(function() {
+    $("#qArea").show();
+    $(".result-msg").hide();
     showNextQuestion();
 });
 
@@ -52,5 +54,7 @@ function showNextQuestion() {
         }
     } else {
         $("#qArea").hide();
+        $("#finalScore").html("Correct: " + (numCorrect / numTotal * 100).toFixed(2) + "%");
+        $("#finalScreen").show();
     }
 }

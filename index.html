@@ -7,13 +7,18 @@
     </head>
     <body>
         
+        <nav class="navbar navbar-inverse sticky-top" style="background-color: #6d0a0a;">
+            <div class="container">
+                <a class="navbar-brand" href="#">ChemistryTrivia</a>
+                <span id="score" class="navbar-text" style="float: right;">Correct: --%</span>
+            </div>
+        </nav>
+        
         <div class="container">
             
-            <div id="score">--%</div>
+            <button class="btn btn-primary btn-lg btn-block mt-5" id="playBtn">Play</button>
             
-            <button class="btn" id="playBtn">Play</button>
-            
-            <div id="qArea" class="qArea">
+            <div id="qArea" class="qArea noselect mt-5">
                 <div class="card">
                     <div class="card-block">
                         <h4 class="card-title" id="qBody">qhere</h4>
@@ -48,12 +53,22 @@
                 </div>
             </div>
             
-            <div class="alert alert-success" role="alert" id="correct" style="display:none;">
-                <strong>Correct!</strong>
+            <div class="alert alert-success result-msg mt-5" role="alert" id="correct">
+                <strong>Correct!</strong> <a class="next">Next</a>
             </div>
             
-            <div class="alert alert-danger" role="alert" id="incorrect" style="display:none;">
-                <strong>Incorrect!</strong>
+            <div class="alert alert-danger result-msg mt-5" role="alert" id="incorrect">
+                <strong>Incorrect!</strong> <a class="next">Next</a>
+            </div>
+            
+            <div class="jumbotron mt-5" id="finalScreen">
+                <h1 class="display-3" id="finalScore"></h1>
+                <p class="lead">Always keep improving!</p>
+                <hr class="my-4">
+                <p>Thanks for playing! Good luck in Chemistry!</p>
+                <p class="lead">
+                    <button class="btn btn-primary btn-lg" id="home-btn" onclick="location.reload()">Home</button>
+                </p>
             </div>
             
         </div>
