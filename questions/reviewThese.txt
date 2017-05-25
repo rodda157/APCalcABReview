@@ -1,0 +1,3 @@
+Questions in this file have formatting problems or other need for review
+
+Which of the following compounds is impossible? :: CsCa ;; MgO, N2O3, KI, MgCl2

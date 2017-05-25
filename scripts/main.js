@@ -16,6 +16,7 @@ $(".ans").click(function() {
         $("#correct").show();
     } else {
         $("#correct").hide();
+        $("#correctWas").html(questions[qCurrent].correct);
         $("#incorrect").show();
     }
     $("#score").html("Correct: " + (numCorrect / numTotal * 100).toFixed(2) + "%");
