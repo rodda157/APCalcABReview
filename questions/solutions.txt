@@ -1,0 +1,3 @@
+Which property is not a colligative property? :: solubility elevation ;; freezing point depression, boiling point elevation, vapor pressure depression, taste
+Which unit does not measure concentration? :: mol ;; M, ppm, ppb, mass percent
+Which compound is a strong acid? :: HCl ;; NaOH, H3PO4, CO2, H2SO3

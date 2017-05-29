@@ -1,0 +1,13 @@
+What element has the electron configuration 2-8? :: Ne ;; |
+Which of the following has 4 valence electrons? :: Si ;; | !C, Ge, Sn, Pb, Uuq
+Which of the following is most reactive? :: F ;; Cl, Br, I, At
+Which element has the highest electronegativity? :: F ;; |
+Which condensed electron configuration represents an excited atom of Ca? :: 2-8-8-1-1 ;; 2-8-8-2, 2-8-8-3, 3-17, 2-8-9-1
+Which is the nuclear charge of an atom of phosphorus with a mass number of 31? :: +15 ;; +31, -15, 0, -1
+Which statement about periodic trends is true? :: Atomic radius decreases from left to right ;; Atomic mass decreases from top to bottom, Nuclear charge remains constant from left to right, The number of orbitals increases from left to right, The number of electrons decreases from top to bottom
+Which element has the fewest valence electrons in the ground state? :: Li ;; C, S, Si, Mg
+Which element is a noble gas? :: Ar ;; Br, V, Os, U
+How many electrons fit in an s orbital :: 2 ;; 6, 8, 1, 12
+Which species is an isotope of Mg-24? :: Mg-25 ;; Na-24, H-24, W-184, C-12
+Which conclusion was drawn as a result of Rutherford’s Gold Foil Experiment? :: The atom is mostly empty space ;; The atom is positively charged, All matter is made up of atoms, Electrons are negatively charged, Gold is hydrophobic
+Which element will form a colorful ion in solution? :: Cu ;; C, H, Na, Ne
