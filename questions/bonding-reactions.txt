@@ -1,0 +1,6 @@
+Which pair of elements will form an ionic bond? :: magnesium and chlorine ;; carbon and nitrogen, lithium and neon, sodium and barium, manganese and hydrogen
+In which case is a reaction guaranteed to be spontaneous? :: increasing entropy and exothermic ;; increasing entropy and endothermic, decreasing entropy and exothermic, decreasing entropy and endothermic, no entropy or change in energy
+How do catalysts increase the rate of reactions? :: by decreasing activation energy ;; by increasing heat of reaction, by adding a reactant, by decreasing pH, by increasing pressure
+Which molecule contains a triple covalent bond? :: N2 ;; CO, CO2, H2, O3
+What is the same about all isomers of the same organic molecule? :: molecular formula ;; molecular structure, physical properties, chemical properties, name
+Which organic molecule has the most possible isomers? :: decane ;; methane, propane, hexane, octane
