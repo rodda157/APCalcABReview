@@ -1,3 +1,6 @@
+var music = document.getElementById("music");
+
+
 var fileNames = getFileNames();
 var questionFiles = getQuestionsArrayFromFiles(fileNames);
 var questions = createQuestions(questionFiles);
@@ -30,9 +33,20 @@ $(".next").click(function() {
     showNextQuestion();
 });
 
+$("#playPause").click(function() {
+    if (music.paused) {
+        music.play();
+        $(this).html('<i id="musicIcon" class="fa fa-volume-up"></i>');
+    } else {
+        music.pause();
+        $(this).html('<i id="musicIcon" class="fa fa-volume-off"></i>&nbsp;&nbsp;');
+    }
+});
+
 $("#playBtn").click(function() {
     $("#playBtn").hide();
     $("#qArea").show();
+    music.play();
     showNextQuestion();
 });
 

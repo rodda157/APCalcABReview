@@ -11,3 +11,4 @@ How many electrons fit in an s orbital :: 2 ;; 6, 8, 1, 12
 Which species is an isotope of Mg-24? :: Mg-25 ;; Na-24, H-24, W-184, C-12
 Which conclusion was drawn as a result of Rutherford’s Gold Foil Experiment? :: The atom is mostly empty space ;; The atom is positively charged, All matter is made up of atoms, Electrons are negatively charged, Gold is hydrophobic
 Which element will form a colorful ion in solution? :: Cu ;; C, H, Na, Ne
+Which property does not describe a metal? :: forms covalent bonds ;; malleable, ductile, conducts electricity in liquid state, forms bonds with a mobile sea of electrons

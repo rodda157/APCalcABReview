@@ -4,8 +4,15 @@
         <title>Chemistry Trivia</title>
         
         <link rel="stylesheet" href="style/stylesheet.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     </head>
     <body>
+        
+        <audio id="music" loop>
+            <source src="music/ChemTriviaSoundtrack.ogg" type="audio/ogg">
+            <source src="music/ChemTriviaSoundtrack.aac" type="audio/acc">
+            <source src="music/ChemTriviaSoundtrack.mp3" type="audio/mpeg">
+        </audio>
         
         <nav class="navbar navbar-inverse sticky-top" style="background-color: #6d0a0a;">
             <div class="container">
@@ -19,6 +26,8 @@
             <button class="btn btn-primary btn-lg btn-block mt-5" id="playBtn">Play</button>
             
             <div id="qArea" class="qArea noselect mt-5">
+                <div id="playPause"><i id="musicIcon" class="fa fa-volume-up"></i></div>
+                <div class="clearFloat"></div>
                 <div class="card">
                     <div class="card-block">
                         <h4 class="card-title" id="qBody">qhere</h4>
