@@ -62,3 +62,15 @@
 #home-btn:hover {
     cursor: pointer;
 }
+
+#playPause {
+    float: right;
+}
+
+#playPause:hover {
+    cursor: pointer;
+}
+
+.clearFloat {
+    clear: both;
+}
