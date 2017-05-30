@@ -1,4 +1,5 @@
 var music = document.getElementById("music");
+music.load();
 
 
 var fileNames = getFileNames();
