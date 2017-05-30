@@ -1,4 +1,5 @@
 var music = document.getElementById("music");
+music.load();
 
 
 var fileNames = getFileNames();
@@ -44,7 +45,7 @@ $("#playPause").click(function() {
 });
 
 $("#playBtn").click(function() {
-    $("#playBtn").hide();
+    $("#startScreen").hide();
     $("#qArea").show();
     music.play();
     showNextQuestion();
