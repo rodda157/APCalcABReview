@@ -67,7 +67,7 @@
 
 #home-btn {
     background-color: #6d0a0a;
-    
+    display:inline-block;
 }
 
 #home-btn:hover {
