@@ -1,6 +1,4 @@
-atomicStructure.txt
-phases.txt
+LimitsAndContinuity.txt
+Deriv.txt
 solutions.txt
-bonding-reactions.txt
-redox.txt
-unsorted.txt
+Integral.txt
