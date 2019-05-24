@@ -16,6 +16,10 @@
     display:inline-block;
 }
 
+#container{
+    text-align: center;
+}
+
 .noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -51,10 +55,7 @@
 #playBtn {
     background-color: #6d0a0a;
     margin: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display:inline-block;
 }
 
 #playBtn:hover {
@@ -67,7 +68,6 @@
 
 #home-btn {
     background-color: #6d0a0a;
-    display:inline-block;
 }
 
 #home-btn:hover {
