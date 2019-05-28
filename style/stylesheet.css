@@ -7,16 +7,16 @@
 }
 
 #qArea {
-    display: none
+    display: none;
 }
 
-.divider{
-    width:5px;
-    height:auto;
-    display:inline-block;
+.divider {
+    width: 5px;
+    height: auto;
+    display: inline-block;
 }
 
-#buttonContainer{
+#buttonContainer {
     text-align: center;
 }
 
@@ -36,7 +36,6 @@
 .ans:hover {
     cursor: pointer;
     background-color: #f0f0f0;
-    
 }
 
 .result-msg {
