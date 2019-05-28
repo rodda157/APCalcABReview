@@ -44,13 +44,6 @@ $("#playPause").click(function() {
     }
 });
 
-$("#playBtn").click(function() {
-    $("#startScreen").hide();
-    $("#qArea").show();
-    music.play();
-    showNextQuestion();
-});
-
 ("#Cont").click(function() {
     $("#startScreen").hide();
     $("#qArea").show();
