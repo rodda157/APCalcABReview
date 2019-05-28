@@ -52,14 +52,14 @@
     cursor: pointer;
 }
 
-#playBtn {
+.playBtn {
     background-color: #6d0a0a;
-    margin: 0;
-    display:inline-block;
-    border-width: 5px;
+    margin: 1px;
+    display: inline-block;
+    color: white;
 }
 
-#playBtn:hover {
+.playBtn:hover {
     cursor: pointer;
 }
 
