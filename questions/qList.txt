@@ -1,4 +1,3 @@
 LimitsAndContinuity.txt
 Deriv.txt
-solutions.txt
 Integral.txt
