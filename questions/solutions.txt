@@ -1,5 +1,0 @@
-Which property is not a colligative property? :: solubility elevation ;; freezing point depression, boiling point elevation, vapor pressure depression, taste
-Which unit does not measure concentration? :: mol ;; M, ppm, ppb, mass percent
-Which compound is a strong acid? :: HCl ;; NaOH, H3PO4, CO2, H2SO3
-What does [H+] mean :: concentration of H+ in molarity ;; mass of H+, volume of H+, percent by mass of H+, average kinetic energy of H+ ions
-How is solubility related to temperature? :: directly for solid/liquid solutes and indirectly for gaseous solutes ;; indirectly for solid/liquid solutes and directly for gaseous solutes, directly, indirectly, not at all
