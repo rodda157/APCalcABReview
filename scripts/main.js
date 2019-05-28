@@ -51,6 +51,13 @@ $("#playBtn").click(function() {
     showNextQuestion();
 });
 
+("#Cont").click(function() {
+    $("#startScreen").hide();
+    $("#qArea").show();
+    music.play();
+    showNextQuestion();
+});
+
 function shuffle(array) {
     for (var i = array.length - 1; i > 0; i--) {
         var n = Math.floor(Math.random() * i);
