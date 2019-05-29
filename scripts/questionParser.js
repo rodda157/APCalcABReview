@@ -46,8 +46,17 @@ function createQuestions(qArr) {
                 if(sep1 < 0)
                 {
                     var img = q.substring(0, q.indexOf("|"));
-                    img
+                    img = img.trim();
+                    var qImage = document.createElement("qImage");
+                    qImage.setAttribute("src", img);
+                    qImage.setAttribute("width", "150");
+                    qImage.setAttribute("height", "50");
+                    qImage.setAttribute("alt", "Question");
+                    sep1 = q.indexOf("|")-1;
+                    document.getElementById("qImage").src = img;
+                    question.body = "";
                 }
+                    
                 else
                 {
                     question.body = q.substring(0, sep1).trim();
