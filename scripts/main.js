@@ -44,7 +44,7 @@ $("#playPause").click(function() {
     }
 });
 
-$("#cont").click(function() {
+$("#buttonContainer").click(function() {
     $("#startScreen").hide();
     $("#qArea").show();
     music.play();
