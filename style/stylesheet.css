@@ -1,6 +1,14 @@
-.footer {
+.footerQuestion {
     background-color: #f0f0f0;
     position: static;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footerStart {
+    background-color: #f0f0f0;
+    position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
