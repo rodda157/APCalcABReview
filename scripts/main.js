@@ -1,11 +1,7 @@
 var music = document.getElementById("music");
 music.load();
 
-
-var fileNames = getFileNames();
-var questionFiles = getQuestionsArrayFromFiles(fileNames);
-var questions = createQuestions(questionFiles);
-questions = shuffle(questions);
+var questions = [];
 
 var qCurrent = 0;
 var numCorrect = 0;
@@ -49,6 +45,9 @@ $("#cont").click(function() {
     $("#qArea").show();
     music.play();
     topic = "cont";
+    var questionFiles = getQuestionsArrayFromFiles(["LimitsAndContinuity.txt"]);
+    questions = createQuestions(questionFiles);
+    questions = shuffle(questions);
     showNextQuestion();
 });
 
@@ -64,24 +63,12 @@ function shuffle(array) {
 
 function showNextQuestion() {
     
-    if (qCurrent < questions.length && topic.equals("cont")) {
+    if (qCurrent < questions.length) {
         $("#qBody").html(questions[qCurrent].body);
         questions[qCurrent].choices = shuffle(questions[qCurrent].choices);
         for (var i = 0; i < questions[qCurrent].choices.length; i++) {
             $("#ans" + (i + 1)).html(questions[qCurrent].choices[i]);
         }
-    else if (qCurrent < questions.length && topic.equals("deriv")) {
-        $("#qBody").html(questions[qCurrent].body);
-        questions[qCurrent].choices = shuffle(questions[qCurrent].choices);
-        for (var i = 0; i < questions[qCurrent].choices.length; i++) {
-            $("#ans" + (i + 1)).html(questions[qCurrent].choices[i]);
-        }
-    else if (qCurrent < questions.length && topic.equals("integ")) {
-        $("#qBody").html(questions[qCurrent].body);
-        questions[qCurrent].choices = shuffle(questions[qCurrent].choices);
-        for (var i = 0; i < questions[qCurrent].choices.length; i++) {
-            $("#ans" + (i + 1)).html(questions[qCurrent].choices[i]);
-        }    
     } else {
         $("#qArea").hide();
         $("#finalScore").html("Correct: " + (numCorrect / numTotal * 100).toFixed(2) + "%");

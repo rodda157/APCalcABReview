@@ -1,1 +1,1 @@
-Which is the nuclear charge of an atom of phosphorus with a mass number of 31? :: +15 ;; +31, -15, 0, -1
+ :: D.N.E. ;; -8, 2, -5
