@@ -10,7 +10,7 @@ questions = shuffle(questions);
 var qCurrent = 0;
 var numCorrect = 0;
 var numTotal = 0;
-
+var topic = "";
 $(".ans").click(function() {
     numTotal++;
     ans = $(this).find("h4").html();
@@ -48,6 +48,7 @@ $("#cont").click(function() {
     $("#startScreen").hide();
     $("#qArea").show();
     music.play();
+    topic = "cont";
     showNextQuestion();
 });
 
@@ -62,12 +63,25 @@ function shuffle(array) {
 }
 
 function showNextQuestion() {
-    if (qCurrent < questions.length) {
+    
+    if (qCurrent < questions.length && topic.equals("cont")) {
         $("#qBody").html(questions[qCurrent].body);
         questions[qCurrent].choices = shuffle(questions[qCurrent].choices);
         for (var i = 0; i < questions[qCurrent].choices.length; i++) {
             $("#ans" + (i + 1)).html(questions[qCurrent].choices[i]);
         }
+    else if (qCurrent < questions.length && topic.equals("deriv")) {
+        $("#qBody").html(questions[qCurrent].body);
+        questions[qCurrent].choices = shuffle(questions[qCurrent].choices);
+        for (var i = 0; i < questions[qCurrent].choices.length; i++) {
+            $("#ans" + (i + 1)).html(questions[qCurrent].choices[i]);
+        }
+    else if (qCurrent < questions.length && topic.equals("integ")) {
+        $("#qBody").html(questions[qCurrent].body);
+        questions[qCurrent].choices = shuffle(questions[qCurrent].choices);
+        for (var i = 0; i < questions[qCurrent].choices.length; i++) {
+            $("#ans" + (i + 1)).html(questions[qCurrent].choices[i]);
+        }    
     } else {
         $("#qArea").hide();
         $("#finalScore").html("Correct: " + (numCorrect / numTotal * 100).toFixed(2) + "%");
