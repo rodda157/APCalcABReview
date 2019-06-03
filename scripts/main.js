@@ -44,8 +44,29 @@ $("#cont").click(function() {
     $("#startScreen").hide();
     $("#qArea").show();
     music.play();
-    topic = "cont";
     var questionFiles = getQuestionsArrayFromFiles(["LimitsAndContinuity.txt"]);
+    questions = createQuestions(questionFiles);
+    questions = shuffle(questions);
+    showNextQuestion();
+});
+
+$("#deriv").click(function() {
+    $("#startScreen").hide();
+    $("#qArea").show();
+    music.play();
+    topic = "cont";
+    var questionFiles = getQuestionsArrayFromFiles(["Deriv.txt"]);
+    questions = createQuestions(questionFiles);
+    questions = shuffle(questions);
+    showNextQuestion();
+});
+
+$("#integ").click(function() {
+    $("#startScreen").hide();
+    $("#qArea").show();
+    music.play();
+    topic = "cont";
+    var questionFiles = getQuestionsArrayFromFiles(["Integral.txt"]);
     questions = createQuestions(questionFiles);
     questions = shuffle(questions);
     showNextQuestion();
@@ -64,7 +85,15 @@ function shuffle(array) {
 function showNextQuestion() {
     
     if (qCurrent < questions.length) {
-        $("#qBody").html(questions[qCurrent].body);
+        if(questions[qCurrent].body.toString().charAt(0) == '.')
+        {
+            $("#qBody").html("");
+            document.getElementById("qImage").src = questions[qCurrent].body;
+        }
+        else
+        {
+            $("#qBody").html(questions[qCurrent].body);
+        }
         questions[qCurrent].choices = shuffle(questions[qCurrent].choices);
         for (var i = 0; i < questions[qCurrent].choices.length; i++) {
             $("#ans" + (i + 1)).html(questions[qCurrent].choices[i]);

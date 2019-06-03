@@ -1,1 +1,5 @@
-
+./questions/qImages/integ/integ1.PNG | 2160 ;; 2400! 1560! 2000
+./questions/qImages/integ/integ2.PNG | 114.9 ;; 64.9! 119.2! 116.6
+∫sec(x)tan(x)dx = :: sec(x) + C ;; tan(x) + C! (sec²(x))/2 + C! (tan²(x))/2 + C
+What is the area of the region in the first quadrant bounded by the graph of y = eˣ/² and the line x = 2 :: 2e - 2 ;; 2e! e - 1! (e - 1)/2
+A particle moves along the x-axis. The velocity of the particle at time t is 6t - t². What is the total distance traveled by the particle from time t = 0 to t = 3? :: 18 ;; 27! 9! 3

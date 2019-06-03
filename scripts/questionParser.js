@@ -47,14 +47,8 @@ function createQuestions(qArr) {
                 {
                     var img = q.substring(0, q.indexOf("|"));
                     img = img.trim();
-                    var qImage = document.createElement("qImage");
-                    qImage.setAttribute("src", img);
-                    qImage.setAttribute("width", "150");
-                    qImage.setAttribute("height", "50");
-                    qImage.setAttribute("alt", "Question");
+                    question.body = img;
                     sep1 = q.indexOf("|")-1;
-                    document.getElementById("qImage").src = img;
-                    question.body = "";
                 }
                     
                 else
@@ -65,7 +59,7 @@ function createQuestions(qArr) {
                 question.correct = q.substring(sep1 + 2, sep2).trim();
                 var answers = q.substring(sep2 + 2).trim();
                 if (answers.indexOf("|") < 0) { //No | means use specified answers
-                    question.choices = answers.split(",");
+                    question.choices = answers.split("!");
                 }
                 question.choices.push(question.correct); //Add correct answer to answers
                 for (var i = 0; i < question.choices.length; i++) { //Remove excess whitespace in answers
@@ -77,6 +71,14 @@ function createQuestions(qArr) {
                 } else {
                     console.log("Not enough answers on this question:");
                     console.log(question.body);
+                }
+                if ($("body").height() > $(window).height()) 
+                {
+                     $('.footer').css('position', 'static');
+                }
+                 else
+                {
+                    $('.footer').css('position', 'fixed');
                 }
             }
         });
