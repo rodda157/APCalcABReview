@@ -24,6 +24,10 @@ $(".ans").click(function() {
     $("#qArea").hide();
 });
 
+$(".navbar-brand").click(function(){
+    document.location.reload()
+});
+
 $(".next").click(function() {
     $("#qArea").show();
     $(".result-msg").hide();
@@ -44,6 +48,7 @@ $("#cont").click(function() {
     $("#startScreen").hide();
     $("#qArea").show();
     music.play();
+    alert("Hi");
     var questionFiles = getQuestionsArrayFromFiles(["LimitsAndContinuity.txt"]);
     questions = createQuestions(questionFiles);
     questions = shuffle(questions);

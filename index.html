@@ -9,15 +9,18 @@
     <body>
         
         <audio id="music" loop>
-            <source src="music/ChemTriviaSoundtrack.ogg" type="audio/ogg">
-            <source src="music/ChemTriviaSoundtrack.aac" type="audio/acc">
-            <source src="music/ChemTriviaSoundtrack.mp3" type="audio/mpeg">
+            <source src="music/APCalcABReviewFunkyTunes.ogg" type="audio/ogg">
+            <source src="music/APCalcABReviewFunkyTunes.aac" type="audio/acc">
+            <source src="music/APCalcABReviewFunkyTunes.mp3" type="audio/mpeg">
         </audio>
         
         <nav class="navbar navbar-inverse sticky-top" style="background-color: #6d0a0a;">
             <div class="container">
-                <a class="navbar-brand" href="#">AP Calculus AB Review</a>
+                <a style="color:white;" class="navbar-brand" >AP Calculus AB Review</a>
                 <span id="score" class="navbar-text" style="float: right;">Correct: --%</span>
+                <a href="https://github.com/rodda157/APCalcABReview" target="_blank">
+                <img id="gitHub" src="./GitHub-Mark-Filled-32px.png" />
+                </a>
             </div>
         </nav>
         
@@ -38,6 +41,9 @@
             </div>
             <div id="qArea" class="qArea noselect mt-5">
                 <div id="playPause"><i id="musicIcon" class="fa fa-volume-up"></i></div>
+                <a href="https://www.desmos.com/calculator" target="_blank">
+                <div id="calculator"><i id="calculator" style="color:black" class="fa fa-calculator"></i></div>
+                </a>
                 <div class="clearFloat"></div>
                 <div class="card">
                     <div class="card-block">
@@ -87,14 +93,7 @@
                 </p>
             </div>
             
-        </div>
-            <div class="footer">
-            <div class="container">
-                <br>
-                Take a look at the code <a href="https://github.com/rodda157/APCalcABReview">on GitHub</a>. 
-                &copy; Nicholas Wight and Jack Greenberg 2019. <br><br>
-            </div>
-        </div>    
+            
         <!-- Bootstrap 4 and Jquery -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

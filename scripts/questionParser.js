@@ -56,6 +56,7 @@ function createQuestions(qArr) {
                     question.body = q.substring(0, sep1).trim();
                 }
                 var sep2 = q.indexOf(";;");
+                console.log(q.substring(sep1));
                 question.correct = q.substring(sep1 + 2, sep2).trim();
                 var answers = q.substring(sep2 + 2).trim();
                 if (answers.indexOf("|") < 0) { //No | means use specified answers

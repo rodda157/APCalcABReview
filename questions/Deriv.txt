@@ -1,5 +1,5 @@
-If f(x) = ln(sin(x))! what is f'(π)? :: D.N.E. ;; 0! 2! 1
-If y = xsin(x)! then dy/dx = :: sin(x) + xcos(x) ;; sin(x) + cos(x)! sin(x) - xcos(x)! x(sin(x) + cos(x))
-Let f be the function given by f(x) = 300x - x³. On which of the following interals is the function f increasing? :: [-10, 10] ;; (-∞, -10] and [10, ∞), [0, 10] only! [0, ∞)
-If f(x) = 7x - 3 + ln(x)! then f'(1) = :: 8 ;; 4! 5! 7
-If y = (x³ - cos(x))⁵! then y' = :: 5(x³ - cos(x))⁴ * (3x² + sin(x)) ;; 5(x³ - sin(x))⁴ * (3x² + cos(x))! 5(3x² + sin(x))! 5(x³ - cos(x))⁴
+If f(x) = ln(sin(x)), what is f'(π)? :: D.N.E. ;; 0! 2! 1
+If y = xsin(x), then dy/dx = :: sin(x) + xcos(x) ;; sin(x) + cos(x)! sin(x) - xcos(x)! x(sin(x) + cos(x))
+Let f be the function given by f(x) = 300x - x³. On which of the following interals is the function f increasing? :: [-10, 10] ;; (-∞, -10] and [10, ∞)! [0, 10] only! [0, ∞)
+If f(x) = 7x - 3 + ln(x), then f'(1) = :: 8 ;; 4! 5! 7
+If y = (x³ - cos(x))⁵, then y' = :: 5(x³ - cos(x))⁴ * (3x² + sin(x)) ;; 5(x³ - sin(x))⁴ * (3x² + cos(x))! 5(3x² + sin(x))! 5(x³ - cos(x))⁴
