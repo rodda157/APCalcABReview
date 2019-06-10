@@ -7,6 +7,9 @@ var qCurrent = 0;
 var numCorrect = 0;
 var numTotal = 0;
 var topic = "";
+var elt = document.getElementById('calculator');
+var calculator = Desmos.GraphingCalculator(elt); 
+
 $(".ans").click(function() {
     numTotal++;
     ans = $(this).find("h4").html();
@@ -34,6 +37,14 @@ $(".next").click(function() {
     showNextQuestion();
 });
 
+$("#calculatorButton").click(function() {
+    $("#calculator").toggle();
+});
+
+$("#gitHub").click(function() {
+    window.open("https://github.com/rodda157/APCalcABReview",'_blank');
+});
+
 $("#playPause").click(function() {
     if (music.paused) {
         music.play();
@@ -46,9 +57,9 @@ $("#playPause").click(function() {
 
 $("#cont").click(function() {
     $("#startScreen").hide();
+    $("#calculator").hide();
     $("#qArea").show();
     music.play();
-    alert("Hi");
     var questionFiles = getQuestionsArrayFromFiles(["LimitsAndContinuity.txt"]);
     questions = createQuestions(questionFiles);
     questions = shuffle(questions);
@@ -57,6 +68,7 @@ $("#cont").click(function() {
 
 $("#deriv").click(function() {
     $("#startScreen").hide();
+    $("#calculator").hide();
     $("#qArea").show();
     music.play();
     topic = "cont";
@@ -68,6 +80,7 @@ $("#deriv").click(function() {
 
 $("#integ").click(function() {
     $("#startScreen").hide();
+    $("#calculator").hide();
     $("#qArea").show();
     music.play();
     topic = "cont";

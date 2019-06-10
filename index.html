@@ -16,11 +16,9 @@
         
         <nav class="navbar navbar-inverse sticky-top" style="background-color: #6d0a0a;">
             <div class="container">
+                <img id="gitHub" src="./GitHub-Mark-Filled-32px.png" href="https://github.com/rodda157/APCalcABReview" />
                 <a style="color:white;" class="navbar-brand" >AP Calculus AB Review</a>
                 <span id="score" class="navbar-text" style="float: right;">Correct: --%</span>
-                <a href="https://github.com/rodda157/APCalcABReview" target="_blank">
-                <img id="gitHub" src="./GitHub-Mark-Filled-32px.png" />
-                </a>
             </div>
         </nav>
         
@@ -31,6 +29,7 @@
                     <div class="card-block">
                         <h4 class="card-title">AP Calculus AB Review</h4>
                         <p>Click a topic to begin studying!</p>
+                        <p>Remember that these questions are designed to be done without a calculator!</p>
                     </div>
                 </div>
                 <div id="buttonContainer">
@@ -41,9 +40,8 @@
             </div>
             <div id="qArea" class="qArea noselect mt-5">
                 <div id="playPause"><i id="musicIcon" class="fa fa-volume-up"></i></div>
-                <a href="https://www.desmos.com/calculator" target="_blank">
-                <div id="calculator"><i id="calculator" style="color:black" class="fa fa-calculator"></i></div>
-                </a>
+                <div id="calculatorButton"><i id="calculatorButton" style="color:black" class="fa fa-calculator"></i></div>
+                <div id="calculator" style="width: 600px; height: 400px;"></div>
                 <div class="clearFloat"></div>
                 <div class="card">
                     <div class="card-block">
@@ -100,8 +98,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         
+        <!-- Desmos script -->
+        <script src="https://www.desmos.com/api/v1.2/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+        
         <!-- My scripts -->
         <script type="text/javascript" src="scripts/questionParser.js"></script>
         <script type="text/javascript" src="scripts/main.js"></script>
+        
     </body>
 </html>

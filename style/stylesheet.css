@@ -10,6 +10,18 @@
     left: 0;
 }
 
+.gitHubLink {
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+#calculatorButton {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
 .navbar-brand {
     cursor: pointer;
 }
@@ -18,13 +30,18 @@ body{
    position: relative;   
 }
 
+
 #qArea {
     display: none;
 }
 
 #gitHub {
     position: relative;
-    left: -290px;
+    left: -50px;
+    top: -3px;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
 }
 
 .divider {
@@ -104,7 +121,8 @@ body{
 }
 
 #calculator {
-    float: right;
+    position: relative;
+    right: -25%;
 }
 
 #playPause:hover {
